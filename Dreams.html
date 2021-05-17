@@ -1,0 +1,86 @@
+<html>
+	<head>
+		<title> PT 4-1_NEMENZO </title>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+		<style>
+			*	{
+				box-sizing: border-box;
+				padding: 0;
+				margin: 0;
+			}
+			.navigation_bar	{
+				display: flex;
+				flex-direction: row;
+				position: fixed;
+				height: 60;
+				width: 100%;
+				overflow-x: hidden;
+				padding-top: 15px;
+				background: #2C3E50;
+			}
+			.navigation_bar> a	{
+				font-family: 'Roboto', sans-serif;
+				text-decoration: none;
+				color: white;
+				padding-left: 15px;
+				font-size: x-large;
+			}
+			.gridcontainer	{
+                display: grid;
+                grid-template-columns: 0.3fr 2fr;
+                grid-template-rows: 1fr 2fr 2fr 2fr 2fr 2fr 1fr;
+                width: 100vw;
+                height: 100vh;
+                grid-template-areas:
+                "header header"
+                "sidebar content"
+                "sidebar content"
+                "sidebar content"
+                "sidebar content"
+                "sidebar content"
+                "sidebar content";
+			}
+			.sidebar	{
+                grid-area: sidebar;
+			} 
+            .header	{
+                grid-area: header;
+			}
+            .content	{
+				padding: 15% 0;
+				font-family: 'Roboto', Algerian;
+				text-align: center;
+				font-size: 25px;
+				color: white;
+				height: 100%;
+				background-image: url("images/dream.jpg");
+                grid-area: content;
+                overflow-y: scroll;
+			} 
+		</style>
+	</head>
+	<body>
+				<div class="header">
+					<div class="navigation_bar">
+						<a href=Hobbies.html>Hobbies</a></li>
+						<a href=Favorite_Games.html>Favorite Games</a></li>
+						<a href=Favorite_Food.html>Favorite Food</a></li>
+						<a href=main.html>Go Back</a></li>
+						<a href=religion.html>Religion</a></li>
+					</div>
+				</div>
+					<div class="sidebar"></div>
+			<div class="content">
+				<h1>Dreams</h1>
+				<p>I dreamed to be a doctor and a succesful Musician one day</p>
+				<br>
+				
+			</div>
+		</div>
+	</body>
+</html>
+
+
+
+<header>
